@@ -1,11 +1,13 @@
-<header>
-   
-</header>
-    <style>
-        .tabb{
-            border:1px solid blue;
-        }
-    </style>
+<head>
+  <style>
+    .tabb{
+        border:1px solid blue;
+    }
+</style>  
+  <script> 
+  function hello(name){document.getElementById("zetmir").innerHTML="hello, "+name}
+  </script>
+</head>
 <body>
   текст  
     <hr>
@@ -28,7 +30,11 @@
     <br>
     </center>
   <center>
-    <button>я олень отпустить грехи</button>
+    <div id="zetmir">
+
+    </div>
+    <input type="text" id="alfa">
+    <button onclick='hello(document.getElementById("alfa").value)'>я олень отпустить грехи</button>
   </center>
   <ul>
     я научился: 
